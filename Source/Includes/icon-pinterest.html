@@ -1,3 +1,3 @@
 {%- capture pinterest_url -%}https://www.pinterest.com/{{ include.username| cgi_escape | escape }}{%- endcapture -%}
-{%- assign pinterest_icon = '/assets/images/minima-social-icons.svg#pinterest' | relative_url -%}
+{%- assign pinterest_icon = '/Assets/Images/minima-social-icons.svg#pinterest' | relative_url -%}
 {%- include base-social-icon.html username=include.username icon=pinterest_icon target=pinterest_url -%}

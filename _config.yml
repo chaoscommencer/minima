@@ -1,6 +1,10 @@
 # Build settings
 theme: minima
 
+# Site Source
+# Change the directory where Jekyll will read files.
+source: Source
+
 # Site Destination
 # Change the directory where Jekyll will write files.
 destination: Build
@@ -30,7 +34,7 @@ layouts_dir: Layouts
 sass:
     # SASS Directory
     # Change the directory where Jekyll will read SASS files.
-    sass_dir: css
+    sass_dir: CSS
 
 # Collections Directory
 # Specify the location of the collections directory (relative to the directory
@@ -60,7 +64,7 @@ plugins:
 # Extension of the internal default list of files and/or directories to be
 # excluded from processing.  Entries in this list will not end up in the
 # 'destination' ('Build') directory.  Path exclusions are performed relative
-# to the 'source' (repository root) directory.
+# to the 'source' ('Source') directory.
 #
 # NOTE: An excluded item may be explicitly processed by listing the
 # corresponding path in the list defined by the `include` key.
@@ -78,29 +82,20 @@ plugins:
 #     - vendor/gems/
 #     - vendor/ruby/
 exclude:
-    - Build/
-    - Temporary/
-    - vendor/
-    - css/
+    - CSS/
     - Data/
     - Includes/
     - Layouts/
-    - CODE_OF_CONDUCT.md
-    - History.markdown
-    - LICENSE.txt
-    - minima.gemspec
-    - README.md
-    - screenshot.png
-    - theme_version.rb
+    - Temporary/
 
 # Include
 # Include files and/or directories in the conversion.  Path inclusions are
-# performed relative to the 'source' (repository root) directory.
+# performed relative to the 'source' ('Source') directory.
 # NOTE: Dot-prefixed files are excluded by default.
 #
 # include: [".htaccess"]
 include:
-    - css/main.scss
+    - CSS/main.scss
 
 # Content Filtering
 #------------------

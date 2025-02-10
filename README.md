@@ -32,7 +32,7 @@ Minima has been scaffolded by the `jekyll new-theme` command and therefore has a
 
 ### Layouts
 
-Refers to files within the `Layouts` directory, that define the markup for your theme.
+Refers to files within the `Source/Layouts` directory, that define the markup for your theme.
 
 - `default.html` &mdash; The base layout that lays the foundation for subsequent layouts. The derived layouts inject their contents into this file at the line that says ` {{ content }} ` and are linked to this file via [FrontMatter](https://jekyllrb.com/docs/frontmatter/) declaration `layout: default`.
 - `home.html` &mdash; The layout for your landing-page / home-page / index-page. [[More Info.](#home-layout)]
@@ -41,7 +41,7 @@ Refers to files within the `Layouts` directory, that define the markup for your 
 
 ### Includes
 
-Refers to snippets of code within the `Includes` directory that can be inserted in multiple layouts (and another include-file as well) within the same theme-gem.
+Refers to snippets of code within the `Source/Includes` directory that can be inserted in multiple layouts (and another include-file as well) within the same theme-gem.
 
 - `disqus_comments.html` &mdash; Code to markup disqus comment box.
 - `footer.html` &mdash; Defines the site's footer section.
@@ -51,8 +51,8 @@ Refers to snippets of code within the `Includes` directory that can be inserted 
 
 ### Sass
 
-Refers to `.scss` files within the `css` directory that define the theme's styles.  
-Contains the `main.scss` that imports sass files from within the `css` directory. This `main.scss` is what gets processed into the theme's main stylesheet `main.css` called by `Layouts/default.html` via `Includes/head.html`.
+Refers to `.scss` files within the `Source/CSS` directory that define the theme's styles.  
+Contains the `main.scss` that imports sass files from within the `Source/CSS` directory. This `main.scss` is what gets processed into the theme's main stylesheet `main.css` called by `Source/Layouts/default.html` via `Source/Includes/head.html`.
 
 - `minima.scss` &mdash; The core file imported by preprocessed `main.scss`, it defines the variable defaults for the theme and also further imports sass partials to supplement itself.
 - `minima/_common.scss` &mdash; Common styling and mixins leveraged throughout the minima theme.
@@ -62,7 +62,7 @@ Contains the `main.scss` that imports sass files from within the `css` directory
 
 ### Assets
 
-Refers to various asset files within the `assets` directory.
+Refers to various asset files within the `Source/Assets` directory.
 
 This directory can include sub-directories to manage assets of similar type, and will be copied over as is, to the final transformed site directory.
 
@@ -94,22 +94,22 @@ The title for this section is `Posts` by default and rendered with an `<h2>` tag
 ### Customization
 
 To override the default structure and style of minima, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
-e.g., to override the [`Includes/head.html`](Includes/head.html) file to specify a custom style path, create an `Includes` directory, copy `Includes/head.html` from minima gem folder to `<yoursite>/Includes` and start editing that file.
+e.g., to override the [`Source/Includes/head.html`](Source/Includes/head.html) file to specify a custom style path, create a `Source/Includes` directory, copy `Source/Includes/head.html` from minima gem folder to `<yoursite>/Source/Includes` and start editing that file.
 
-The site's default CSS has now moved to a new place within the gem itself, [`css/main.scss`](css/main.scss). To **override the default CSS**, the file has to exist at your site source. Do either of the following:
+The site's default CSS has now moved to a new place within the gem itself, [`Source/CSS/main.scss`](Source/CSS/main.scss). To **override the default CSS**, the file has to exist at your site source. Do either of the following:
 
 - Create a new instance of `main.scss` at site source.
-  - Create a new file `main.scss` at `<your-site>/css/`
+  - Create a new file `main.scss` at `<your-site>/Source/CSS/`
   - Add the frontmatter dashes, and
-  - Add `@import "minima";`, to `<your-site>/css/main.scss`
+  - Add `@import "minima";`, to `<your-site>/Source/CSS/main.scss`
   - Add your custom CSS.
 - Download the file from this repo
-  - Create  a new file `main.scss` at `<your-site>/css/`
-  - Copy the contents at [css/main.scss](css/main.scss) onto the `main.scss` you just created, and edit away!
+  - Create  a new file `main.scss` at `<your-site>/Source/CSS/`
+  - Copy the contents at [Source/CSS/main.scss](Source/CSS/main.scss) onto the `main.scss` you just created, and edit away!
 - Copy directly from Minima 2.0 gem
   - Go to your local minima gem installation directory ( run `bundle show minima` to get the path to it ).
-  - Copy the `css/` folder from there into the root of `<your-site>`
-  - Change whatever values you want, inside `<your-site>/css/main.scss`
+  - Copy the `Source/CSS/` folder from there into `<your-site>/Source`
+  - Change whatever values you want, inside `<your-site>/Source/CSS/main.scss`
 
 --
 
@@ -117,7 +117,7 @@ The site's default CSS has now moved to a new place within the gem itself, [`css
 
 This allows you to set which pages you want to appear in the navigation area and configure order of the links.
 
-For instance, to only link to the `about` and the `portfolio` page, add the following to your `Data/Minima.yml`:
+For instance, to only link to the `about` and the `portfolio` page, add the following to your `Source/Data/Minima.yml`:
 
 ```yaml
 header:
@@ -131,7 +131,7 @@ header:
 ### Change default date format
 
 You can change the default date format by specifying `date_format`
-in `Data/Minima.yml`.
+in `Source/Data/Minima.yml`.
 
 ```yaml
 # Minima date format
@@ -145,7 +145,7 @@ date_format: "%b %-d, %Y"
 
 Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post.
 
-To enable it, add the following lines to your Jekyll site's `Data/About.yml`:
+To enable it, add the following lines to your Jekyll site's `Source/Data/About.yml`:
 
 ```yaml
 disqus:
@@ -162,7 +162,7 @@ If you don't want to display comments for a particular post you can disable them
 
 ### Social networks
 
-You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your `Data/Author.yml`:
+You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your `Source/Data/Author.yml`:
 
 ```yaml
 social:
@@ -198,7 +198,7 @@ social:
       feed: /feed.xml
 ```
 
-You can add an RSS feed for the site, with respective icon, by adding the following option in your `Data/About.yml`:
+You can add an RSS feed for the site, with respective icon, by adding the following option in your `Source/Data/About.yml`:
 
 ```yaml
 rss: rss
@@ -208,7 +208,7 @@ rss: rss
 
 ### Enabling Google Analytics
 
-To enable Google Analytics, add the following lines to your Jekyll site's `Data/About.yml`:
+To enable Google Analytics, add the following lines to your Jekyll site's `Source/Data/About.yml`:
 
 ```yaml
 google_analytics: UA-NNNNNNNN-N
@@ -220,7 +220,7 @@ Google Analytics will only appear in production, i.e. `JEKYLL_ENV=production`.
 
 ### Enabling Excerpts on the Home Page
 
-To display post-excerpts on the Home Page, simply add the following to your `Data/Minima.yml`:
+To display post-excerpts on the Home Page, simply add the following to your `Source/Data/Minima.yml`:
 
 ```yaml
 show_excerpts: true

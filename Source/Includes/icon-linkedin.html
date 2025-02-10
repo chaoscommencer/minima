@@ -1,3 +1,3 @@
 {%- capture linkedin_url -%}https://www.linkedin.com/{{ include.username| cgi_escape | escape }}{%- endcapture -%}
-{%- assign linkedin_icon = '/assets/images/minima-social-icons.svg#linkedin' | relative_url -%}
+{%- assign linkedin_icon = '/Assets/Images/minima-social-icons.svg#linkedin' | relative_url -%}
 {%- include base-social-icon.html username=include.username icon=linkedin_icon target=linkedin_url -%}

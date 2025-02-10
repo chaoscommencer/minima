@@ -1,3 +1,3 @@
 {%- capture flickr_url -%}https://www.flickr.com/photos/{{ include.username| cgi_escape | escape }}{%- endcapture -%}
-{%- assign flickr_icon = '/assets/images/minima-social-icons.svg#flickr' | relative_url -%}
+{%- assign flickr_icon = '/Assets/Images/minima-social-icons.svg#flickr' | relative_url -%}
 {%- include base-social-icon.html username=include.username icon=flickr_icon target=flickr_url -%}
