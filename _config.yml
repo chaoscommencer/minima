@@ -21,6 +21,11 @@ data_dir: Data
 # `source`).
 includes_dir: Includes
 
+# Layouts Directory
+# Change the directory where Jekyll will read layout files (relative to
+# `source`).
+layouts_dir: Layouts
+
 plugins:
     - jekyll-feed
     - jekyll-seo-tag
@@ -56,6 +61,7 @@ exclude:
     - vendor/
     - Data/
     - Includes/
+    - Layouts/
     - CODE_OF_CONDUCT.md
     - History.markdown
     - LICENSE.txt

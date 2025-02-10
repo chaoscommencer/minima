@@ -32,7 +32,7 @@ Minima has been scaffolded by the `jekyll new-theme` command and therefore has a
 
 ### Layouts
 
-Refers to files within the `_layouts` directory, that define the markup for your theme.
+Refers to files within the `Layouts` directory, that define the markup for your theme.
 
 - `default.html` &mdash; The base layout that lays the foundation for subsequent layouts. The derived layouts inject their contents into this file at the line that says ` {{ content }} ` and are linked to this file via [FrontMatter](https://jekyllrb.com/docs/frontmatter/) declaration `layout: default`.
 - `home.html` &mdash; The layout for your landing-page / home-page / index-page. [[More Info.](#home-layout)]
@@ -52,7 +52,7 @@ Refers to snippets of code within the `Includes` directory that can be inserted 
 ### Sass
 
 Refers to `.scss` files within the `_sass` directory that define the theme's styles.  
-Contains the `main.scss` that imports sass files from within the `_sass` directory. This `main.scss` is what gets processed into the theme's main stylesheet `main.css` called by `_layouts/default.html` via `Includes/head.html`.
+Contains the `main.scss` that imports sass files from within the `_sass` directory. This `main.scss` is what gets processed into the theme's main stylesheet `main.css` called by `Layouts/default.html` via `Includes/head.html`.
 
 - `minima.scss` &mdash; The core file imported by preprocessed `main.scss`, it defines the variable defaults for the theme and also further imports sass partials to supplement itself.
 - `minima/_common.scss` &mdash; Common styling and mixins leveraged throughout the minima theme.
