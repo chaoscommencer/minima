@@ -1,7 +1,8 @@
 .bundle
 .sass-cache
 Gemfile.lock
-_site
+_site/
+build/
 temporary/
 vendor/
 *.gem
