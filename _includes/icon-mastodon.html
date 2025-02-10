@@ -1,3 +1,3 @@
 {%- capture mastodon_url -%}https://{{ include.instance| cgi_escape | escape }}/@{{ include.username| cgi_escape | escape }}{%- endcapture -%}
-{%- assign mastodon_icon = '/assets/minima-social-icons.svg#mastodon' | relative_url -%}
+{%- assign mastodon_icon = '/assets/images/minima-social-icons.svg#mastodon' | relative_url -%}
 {%- include base-social-icon.html username=include.username icon=mastodon_icon target=mastodon_url -%}
