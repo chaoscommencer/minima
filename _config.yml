@@ -16,6 +16,11 @@ cache_dir: Temporary/.jekyll-cache
 # files (relative to `source`).
 data_dir: Data
 
+# Includes Directory
+# Change the directory where Jekyll will read include files (relative to
+# `source`).
+includes_dir: Includes
+
 plugins:
     - jekyll-feed
     - jekyll-seo-tag
@@ -50,6 +55,7 @@ exclude:
     - Temporary/
     - vendor/
     - Data/
+    - Includes/
     - CODE_OF_CONDUCT.md
     - History.markdown
     - LICENSE.txt

@@ -41,7 +41,7 @@ Refers to files within the `_layouts` directory, that define the markup for your
 
 ### Includes
 
-Refers to snippets of code within the `_includes` directory that can be inserted in multiple layouts (and another include-file as well) within the same theme-gem.
+Refers to snippets of code within the `Includes` directory that can be inserted in multiple layouts (and another include-file as well) within the same theme-gem.
 
 - `disqus_comments.html` &mdash; Code to markup disqus comment box.
 - `footer.html` &mdash; Defines the site's footer section.
@@ -52,7 +52,7 @@ Refers to snippets of code within the `_includes` directory that can be inserted
 ### Sass
 
 Refers to `.scss` files within the `_sass` directory that define the theme's styles.  
-Contains the `main.scss` that imports sass files from within the `_sass` directory. This `main.scss` is what gets processed into the theme's main stylesheet `main.css` called by `_layouts/default.html` via `_includes/head.html`.
+Contains the `main.scss` that imports sass files from within the `_sass` directory. This `main.scss` is what gets processed into the theme's main stylesheet `main.css` called by `_layouts/default.html` via `Includes/head.html`.
 
 - `minima.scss` &mdash; The core file imported by preprocessed `main.scss`, it defines the variable defaults for the theme and also further imports sass partials to supplement itself.
 - `minima/_common.scss` &mdash; Common styling and mixins leveraged throughout the minima theme.
@@ -94,7 +94,7 @@ The title for this section is `Posts` by default and rendered with an `<h2>` tag
 ### Customization
 
 To override the default structure and style of minima, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
-e.g., to override the [`_includes/head.html`](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minima gem folder to `<yoursite>/_includes` and start editing that file.
+e.g., to override the [`Includes/head.html`](Includes/head.html) file to specify a custom style path, create an `Includes` directory, copy `Includes/head.html` from minima gem folder to `<yoursite>/Includes` and start editing that file.
 
 The site's default CSS has now moved to a new place within the gem itself, [`css/main.scss`](css/main.scss). To **override the default CSS**, the file has to exist at your site source. Do either of the following:
 
