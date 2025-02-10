@@ -51,8 +51,8 @@ Refers to snippets of code within the `Includes` directory that can be inserted 
 
 ### Sass
 
-Refers to `.scss` files within the `_sass` directory that define the theme's styles.  
-Contains the `main.scss` that imports sass files from within the `_sass` directory. This `main.scss` is what gets processed into the theme's main stylesheet `main.css` called by `Layouts/default.html` via `Includes/head.html`.
+Refers to `.scss` files within the `css` directory that define the theme's styles.  
+Contains the `main.scss` that imports sass files from within the `css` directory. This `main.scss` is what gets processed into the theme's main stylesheet `main.css` called by `Layouts/default.html` via `Includes/head.html`.
 
 - `minima.scss` &mdash; The core file imported by preprocessed `main.scss`, it defines the variable defaults for the theme and also further imports sass partials to supplement itself.
 - `minima/_common.scss` &mdash; Common styling and mixins leveraged throughout the minima theme.

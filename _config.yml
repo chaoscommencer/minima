@@ -26,6 +26,12 @@ includes_dir: Includes
 # `source`).
 layouts_dir: Layouts
 
+# SASS-specific configuration.
+sass:
+    # SASS Directory
+    # Change the directory where Jekyll will read SASS files.
+    sass_dir: css
+
 plugins:
     - jekyll-feed
     - jekyll-seo-tag
@@ -59,6 +65,7 @@ exclude:
     - Build/
     - Temporary/
     - vendor/
+    - css/
     - Data/
     - Includes/
     - Layouts/
@@ -76,7 +83,8 @@ exclude:
 # NOTE: Dot-prefixed files are excluded by default.
 #
 # include: [".htaccess"]
-include: []
+include:
+    - css/main.scss
 
 # Content Filtering
 #------------------
