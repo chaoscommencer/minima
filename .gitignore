@@ -2,5 +2,6 @@
 .sass-cache
 Gemfile.lock
 _site
+Temporary/
 vendor/
 *.gem
