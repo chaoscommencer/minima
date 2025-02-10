@@ -1,6 +1,10 @@
 # Build settings
 theme: minima
 
+# Site Destination
+# Change the directory where Jekyll will write files.
+destination: build
+
 # Jekyll Cache Directory
 # Change the directory where Jekyll will cache files.
 # WARNING: In order for cache_dir to be respected and for a cache directory to
@@ -18,7 +22,7 @@ plugins:
 # Exclude
 # Extension of the internal default list of files and/or directories to be
 # excluded from processing.  Entries in this list will not end up in the
-# 'destination' ('_site') directory.  Path exclusions are performed relative
+# 'destination' ('build') directory.  Path exclusions are performed relative
 # to the 'source' (repository root) directory.
 #
 # NOTE: An excluded item may be explicitly processed by listing the
@@ -37,6 +41,7 @@ plugins:
 #     - vendor/gems/
 #     - vendor/ruby/
 exclude:
+    - build/
     - temporary/
     - vendor/
     - CODE_OF_CONDUCT.md
