@@ -1,3 +1,3 @@
 {%- capture dribbble_url -%}https://dribbble.com/{{ include.username| cgi_escape | escape }}{%- endcapture -%}
-{%- assign dribbble_icon = '/assets/minima-social-icons.svg#dribbble' | relative_url -%}
+{%- assign dribbble_icon = '/assets/images/minima-social-icons.svg#dribbble' | relative_url -%}
 {%- include base-social-icon.html username=include.username icon=dribbble_icon target=dribbble_url -%}

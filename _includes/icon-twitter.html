@@ -1,3 +1,3 @@
 {%- capture twitter_url -%}https://www.twitter.com/{{ include.username| cgi_escape | escape }}{%- endcapture -%}
-{%- assign twitter_icon = '/assets/minima-social-icons.svg#twitter' | relative_url -%}
+{%- assign twitter_icon = '/assets/images/minima-social-icons.svg#twitter' | relative_url -%}
 {%- include base-social-icon.html username=include.username icon=twitter_icon target=twitter_url -%}
