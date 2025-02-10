@@ -1,6 +1,12 @@
 # Build settings
 theme: minima
 
+# Jekyll Cache Directory
+# Change the directory where Jekyll will cache files.
+# WARNING: In order for cache_dir to be respected and for a cache directory to
+# actually be generated, `safe` and `disable_disk_cache` must each be false.
+cache_dir: temporary/.jekyll-cache
+
 plugins:
     - jekyll-feed
     - jekyll-seo-tag
@@ -31,6 +37,7 @@ plugins:
 #     - vendor/gems/
 #     - vendor/ruby/
 exclude:
+    - temporary/
     - vendor/
     - CODE_OF_CONDUCT.md
     - History.markdown
