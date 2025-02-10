@@ -32,6 +32,22 @@ sass:
     # Change the directory where Jekyll will read SASS files.
     sass_dir: css
 
+# Collections Directory
+# Specify the location of the collections directory (relative to the directory
+# defined by the 'source' variable).  The _drafts and _posts directories are
+# subdirectories of the collections directory.
+collections_dir: Collections
+
+# Defaults
+# Default front matter variables.
+defaults:
+    - scope:
+          path: Collections/_posts
+          type: posts
+      values:
+          layout: post
+          published: true
+
 plugins:
     - jekyll-feed
     - jekyll-seo-tag
