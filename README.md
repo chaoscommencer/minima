@@ -51,7 +51,8 @@ Refers to snippets of code within the `_includes` directory that can be inserted
 
 ### Sass
 
-Refers to `.scss` files within the `_sass` directory that define the theme's styles.
+Refers to `.scss` files within the `_sass` directory that define the theme's styles.  
+Contains the `main.scss` that imports sass files from within the `_sass` directory. This `main.scss` is what gets processed into the theme's main stylesheet `main.css` called by `_layouts/default.html` via `_includes/head.html`.
 
 - `minima.scss` &mdash; The core file imported by preprocessed `main.scss`, it defines the variable defaults for the theme and also further imports sass partials to supplement itself.
 - `minima/_common.scss` &mdash; Common styling and mixins leveraged throughout the minima theme.
@@ -61,8 +62,7 @@ Refers to `.scss` files within the `_sass` directory that define the theme's sty
 
 ### Assets
 
-Refers to various asset files within the `assets` directory.  
-Contains the `main.scss` that imports sass files from within the `_sass` directory. This `main.scss` is what gets processed into the theme's main stylesheet `main.css` called by `_layouts/default.html` via `_includes/head.html`.
+Refers to various asset files within the `assets` directory.
 
 This directory can include sub-directories to manage assets of similar type, and will be copied over as is, to the final transformed site directory.
 
@@ -96,20 +96,20 @@ The title for this section is `Posts` by default and rendered with an `<h2>` tag
 To override the default structure and style of minima, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
 e.g., to override the [`_includes/head.html`](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minima gem folder to `<yoursite>/_includes` and start editing that file.
 
-The site's default CSS has now moved to a new place within the gem itself, [`assets/main.scss`](assets/main.scss). To **override the default CSS**, the file has to exist at your site source. Do either of the following:
+The site's default CSS has now moved to a new place within the gem itself, [`css/main.scss`](css/main.scss). To **override the default CSS**, the file has to exist at your site source. Do either of the following:
 
 - Create a new instance of `main.scss` at site source.
-  - Create a new file `main.scss` at `<your-site>/assets/`
+  - Create a new file `main.scss` at `<your-site>/css/`
   - Add the frontmatter dashes, and
-  - Add `@import "minima";`, to `<your-site>/assets/main.scss`
+  - Add `@import "minima";`, to `<your-site>/css/main.scss`
   - Add your custom CSS.
 - Download the file from this repo
-  - Create  a new file `main.scss` at `<your-site>/assets/`
-  - Copy the contents at [assets/main.scss](assets/main.scss) onto the `main.scss` you just created, and edit away!
+  - Create  a new file `main.scss` at `<your-site>/css/`
+  - Copy the contents at [css/main.scss](css/main.scss) onto the `main.scss` you just created, and edit away!
 - Copy directly from Minima 2.0 gem
   - Go to your local minima gem installation directory ( run `bundle show minima` to get the path to it ).
-  - Copy the `assets/` folder from there into the root of `<your-site>`
-  - Change whatever values you want, inside `<your-site>/assets/main.scss`
+  - Copy the `css/` folder from there into the root of `<your-site>`
+  - Change whatever values you want, inside `<your-site>/css/main.scss`
 
 --
 
