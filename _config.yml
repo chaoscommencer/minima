@@ -5,64 +5,6 @@
 # to jekyll-seo-tag)
 title: Your awesome title
 
-# Global author information is used to propagate the creator field of Twitter
-# summary cards.  This should be an author-specific, not site-wide Twitter
-# handle (the site-wide username should be stored as site.twitter.username
-# instead).
-# author: <Twitter_handle_without_@_prefix>
-# NOTE: For this and the following, the actual Twitter handle is resolved to
-# "@<Twitter_handle_without_@_prefix>"
-# NOTE: To account for multiple authors, instead complete author information in
-# `_data/authors.yml`.  Specify the appropriate author as the object field name
-# in each [post/page/etc.]'s front matter.
-# NOTE: Used by the Jekyll Feed plugin (cannot be moved without modification to
-# jekyll-feed--except for to `_data/authors.yml` file)
-# NOTE: Used by the Jekyll SEO Tag plugin (cannot be moved without modification
-# to jekyll-seo-tag--except for to `_data/authors.yml` file)
-author:
-    name: GitHub User
-    email: your-email@domain.com
-    twitter: jekyllrb
-    # picture: /img/benbalter.png
-
-    # Starting from August 6, 2021 [Google recommends](https://developers.google.com/search/updates) to set the author.url
-    # property. This property helps Google to disambiguate the correct author
-    # of the article.
-    # url:
-
-    # social links
-    social:
-        # - type: dribbble
-        #   username: jekyll
-        # - type: facebook
-        #   username: jekyll
-        # - type: flickr
-        #   username: jekyll
-        - type: github
-          username:  jekyll
-        # - type: instagram
-        #   username: jekyll
-        # - type: linkedin
-        #   username: jekyll
-        # - type:  pinterest
-        #   username: jekyll
-        # Mastodon instances
-        # - type: mastodon
-        #   username: jekyll
-        #   instance: example.com
-        # - type: mastodon
-        #   username: jekyll2
-        #   instance: example.com
-        - type: twitter
-          username: jekyllrb
-        # - type: youtube
-        #   username: jekyll
-        # - type: googleplus
-        #   username: +jekyll
-        # - type: rss
-        #   display_name: rss
-        #   feed: /feed.xml
-
 # A longer description for the site
 # NOTE: Used by the Jekyll Feed plugin (cannot be moved without modification to
 # jekyll-feed)
@@ -101,31 +43,8 @@ social:
         - https://plus.google.com/+jekyll
         - feed.xml
 
-# Site RSS Feed
-rss: rss
-
-# Post Comments (powered by Disqus)
-# disqus:
-#     shortname: my_disqus_shortname
-
-# Google Analytics
-# google_analytics: UA-NNNNNNNN-N
-
 # Language Code
 # lang: en
-
-show_excerpts: false # set to true to show excerpts on the homepage
-
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-minima:
-    date_format: "%b %-d, %Y"
-
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-# header:
-#     pages:
-#         - about.html
 
 # Build settings
 theme: minima

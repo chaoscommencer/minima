@@ -8,22 +8,18 @@
         <div class="footer-col-wrapper">
             <div class="footer-col footer-col-1">
                 <ul class="contact-list">
+                    {%- for author in site.data.authors -%}
                     <li class="p-name">
-                        {%- if site.author -%}
-                        {%- if site.author.name -%}
-                            {{ site.author.name | escape }}
-                        {%- else -%}
-                            {{ site.title | escape }}
-                        {%- endif -%}
+                        {%- if author[1].name -%}
+                            {{ author[1].name | escape }}
                         {%- else -%}
                             {{ site.title | escape }}
                         {%- endif -%}
                     </li>
-                    {%- if site.author -%}
-                    {%- if site.author.email -%}
-                    <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+                    {%- if author[1].email -%}
+                    <li><a class="u-email" href="mailto:{{ author[1].email }}">{{ author[1].email }}</a></li>
                     {%- endif -%}
-                    {%- endif -%}
+                    {%- endfor -%}
                 </ul>
             </div>
 

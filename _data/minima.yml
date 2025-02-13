@@ -1,0 +1,12 @@
+# Show excerpts on the homepage when true
+show_excerpts: false
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+date_format: "%b %-d, %Y"
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+# header:
+#     pages:
+#         - about.html
