@@ -11,6 +11,11 @@ destination: Build
 # actually be generated, `safe` and `disable_disk_cache` must each be false.
 cache_dir: Temporary/.jekyll-cache
 
+# Data Directory
+# Change the directory where Jekyll will read additional configuration data
+# files (relative to `source`).
+data_dir: Data
+
 plugins:
     - jekyll-feed
     - jekyll-seo-tag
@@ -44,6 +49,7 @@ exclude:
     - Build/
     - Temporary/
     - vendor/
+    - Data/
     - CODE_OF_CONDUCT.md
     - History.markdown
     - LICENSE.txt

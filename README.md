@@ -117,7 +117,7 @@ The site's default CSS has now moved to a new place within the gem itself, [`css
 
 This allows you to set which pages you want to appear in the navigation area and configure order of the links.
 
-For instance, to only link to the `about` and the `portfolio` page, add the following to your `_data/Minima.yml`:
+For instance, to only link to the `about` and the `portfolio` page, add the following to your `Data/Minima.yml`:
 
 ```yaml
 header:
@@ -131,7 +131,7 @@ header:
 ### Change default date format
 
 You can change the default date format by specifying `date_format`
-in `_data/Minima.yml`.
+in `Data/Minima.yml`.
 
 ```yaml
 # Minima date format
@@ -145,7 +145,7 @@ date_format: "%b %-d, %Y"
 
 Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post.
 
-To enable it, add the following lines to your Jekyll site's `_data/About.yml`:
+To enable it, add the following lines to your Jekyll site's `Data/About.yml`:
 
 ```yaml
 disqus:
@@ -162,7 +162,7 @@ If you don't want to display comments for a particular post you can disable them
 
 ### Social networks
 
-You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your `_data/Author.yml`:
+You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your `Data/Author.yml`:
 
 ```yaml
 social:
@@ -198,7 +198,7 @@ social:
       feed: /feed.xml
 ```
 
-You can add an RSS feed for the site, with respective icon, by adding the following option in your `_data/About.yml`:
+You can add an RSS feed for the site, with respective icon, by adding the following option in your `Data/About.yml`:
 
 ```yaml
 rss: rss
@@ -208,7 +208,7 @@ rss: rss
 
 ### Enabling Google Analytics
 
-To enable Google Analytics, add the following lines to your Jekyll site's `_data/About.yml`:
+To enable Google Analytics, add the following lines to your Jekyll site's `Data/About.yml`:
 
 ```yaml
 google_analytics: UA-NNNNNNNN-N
@@ -220,7 +220,7 @@ Google Analytics will only appear in production, i.e. `JEKYLL_ENV=production`.
 
 ### Enabling Excerpts on the Home Page
 
-To display post-excerpts on the Home Page, simply add the following to your `_data/Minima.yml`:
+To display post-excerpts on the Home Page, simply add the following to your `Data/Minima.yml`:
 
 ```yaml
 show_excerpts: true
