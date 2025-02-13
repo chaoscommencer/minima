@@ -1,0 +1,50 @@
+title: Your awesome title
+author:
+    name: GitHub User
+    email: your-email@domain.com
+description: > # this means to ignore newlines until "social:"
+    Write an awesome description for your new site here. You can edit this
+    line in _data/Settings.yml. It will appear in your document head meta
+    (for Google search results) and in your feed.xml site description.
+
+# social links
+social:
+    # - type: dribbble
+    #   username: jekyll
+    # - type: facebook
+    #   username: jekyll
+    # - type: flickr
+    #   username: jekyll
+    - type: github
+      username:  jekyll
+    # - type: instagram
+    #   username: jekyll
+    # - type: linkedin
+    #   username: jekyll
+    # - type:  pinterest
+    #   username: jekyll
+    # Mastodon instances
+    # - type: mastodon
+    #   username: jekyll
+    #   instance: example.com
+    # - type: mastodon
+    #   username: jekyll2
+    #   instance: example.com
+    - type: twitter
+      username: jekyllrb
+    # - type: youtube
+    #   username: jekyll
+    # - type: googleplus
+    #   username: +jekyll
+    # - type: rss
+    #   display_name: rss
+    #   feed: /feed.xml
+
+rss: rss
+
+# Post Comments (powered by Disqus)
+# disqus:
+#     shortname: my_disqus_shortname
+
+# Google Analytics
+# google_analytics: UA-NNNNNNNN-N

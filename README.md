@@ -80,7 +80,7 @@ Minima comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) p
 
 From Minima v2.2 onwards, the *home* layout will inject all content from your `index.md` / `index.html` **before** the **`Posts`** heading. This will allow you to include non-posts related content to be published on the landing page under a dedicated heading. *We recommended that you title this section with a Heading2 (`##`)*.
 
-Usually the `site.title` itself would suffice as the implicit 'main-title' for a landing-page. But, if your landing-page would like a heading to be explicitly displayed, then simply define a `title` variable in the document's front matter and it will be rendered with an `<h1>` tag.
+Usually the `site.data.Settings.title` itself would suffice as the implicit 'main-title' for a landing-page. But, if your landing-page would like a heading to be explicitly displayed, then simply define a `title` variable in the document's front matter and it will be rendered with an `<h1>` tag.
 
 #### Post Listing
 
@@ -117,7 +117,7 @@ The site's default CSS has now moved to a new place within the gem itself, [`css
 
 This allows you to set which pages you want to appear in the navigation area and configure order of the links.
 
-For instance, to only link to the `about` and the `portfolio` page, add the following to your `_config.yml`:
+For instance, to only link to the `about` and the `portfolio` page, add the following to your `_data/Minima.yml`:
 
 ```yaml
 header:
@@ -130,14 +130,13 @@ header:
 
 ### Change default date format
 
-You can change the default date format by specifying `minima.date_format`
-in `_config.yml`.
+You can change the default date format by specifying `date_format`
+in `_data/Minima.yml`.
 
 ```yaml
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-minima:
-    date_format: "%b %-d, %Y"
+date_format: "%b %-d, %Y"
 ```
 
 --
@@ -146,7 +145,7 @@ minima:
 
 Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post.
 
-To enable it, add the following lines to your Jekyll site's `_config.yml`:
+To enable it, add the following lines to your Jekyll site's `_data/Settings.yml`:
 
 ```yaml
 disqus:
@@ -163,7 +162,7 @@ If you don't want to display comments for a particular post you can disable them
 
 ### Social networks
 
-You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your `_config.yml`:
+You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your `_data/Settings.yml`:
 
 ```yaml
 social:
@@ -205,7 +204,7 @@ rss: rss
 
 ### Enabling Google Analytics
 
-To enable Google Analytics, add the following lines to your Jekyll site's `_config.yml`:
+To enable Google Analytics, add the following lines to your Jekyll site's `_data/Settings.yml`:
 
 ```yaml
 google_analytics: UA-NNNNNNNN-N
@@ -217,7 +216,7 @@ Google Analytics will only appear in production, i.e. `JEKYLL_ENV=production`.
 
 ### Enabling Excerpts on the Home Page
 
-To display post-excerpts on the Home Page, simply add the following to your `_config.yml`:
+To display post-excerpts on the Home Page, simply add the following to your `_data/Minima.yml`:
 
 ```yaml
 show_excerpts: true
