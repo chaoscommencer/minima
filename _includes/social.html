@@ -1,5 +1,5 @@
 <ul class="social-media-list">
-    {%- for account in site.data.Settings.social -%}
+    {%- for account in site.data.Author.social -%}
     {%- if account.type -%}
     {%- if account.type == "rss" -%}
     {%- if account.display_name and account.feed -%}
@@ -34,7 +34,7 @@
     {%- endif -%}
     {%- endif -%}
     {%- endfor -%}
-    {%- if site.data.Settings.rss -%}
-    <li>{%- assign rss_feed = '/feed.xml' | relative_url -%}{%- include icon-rss.html display_name = site.data.Settings.rss feed = rss_feed -%}</li>
+    {%- if site.data.About.rss -%}
+    <li>{%- assign rss_feed = '/feed.xml' | relative_url -%}{%- include icon-rss.html display_name = site.data.About.rss feed = rss_feed -%}</li>
     {%- endif -%}
 </ul>

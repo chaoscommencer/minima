@@ -80,7 +80,7 @@ Minima comes with [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) p
 
 From Minima v2.2 onwards, the *home* layout will inject all content from your `index.md` / `index.html` **before** the **`Posts`** heading. This will allow you to include non-posts related content to be published on the landing page under a dedicated heading. *We recommended that you title this section with a Heading2 (`##`)*.
 
-Usually the `site.data.Settings.title` itself would suffice as the implicit 'main-title' for a landing-page. But, if your landing-page would like a heading to be explicitly displayed, then simply define a `title` variable in the document's front matter and it will be rendered with an `<h1>` tag.
+Usually the `site.data.About.title` itself would suffice as the implicit 'main-title' for a landing-page. But, if your landing-page would like a heading to be explicitly displayed, then simply define a `title` variable in the document's front matter and it will be rendered with an `<h1>` tag.
 
 #### Post Listing
 
@@ -145,7 +145,7 @@ date_format: "%b %-d, %Y"
 
 Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post.
 
-To enable it, add the following lines to your Jekyll site's `_data/Settings.yml`:
+To enable it, add the following lines to your Jekyll site's `_data/About.yml`:
 
 ```yaml
 disqus:
@@ -162,7 +162,7 @@ If you don't want to display comments for a particular post you can disable them
 
 ### Social networks
 
-You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your `_data/Settings.yml`:
+You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your `_data/Author.yml`:
 
 ```yaml
 social:
@@ -196,7 +196,11 @@ social:
     - type: rss
       display_name: rss
       feed: /feed.xml
+```
 
+You can add an RSS feed for the site, with respective icon, by adding the following option in your `_data/About.yml`:
+
+```yaml
 rss: rss
 ```
 
@@ -204,7 +208,7 @@ rss: rss
 
 ### Enabling Google Analytics
 
-To enable Google Analytics, add the following lines to your Jekyll site's `_data/Settings.yml`:
+To enable Google Analytics, add the following lines to your Jekyll site's `_data/About.yml`:
 
 ```yaml
 google_analytics: UA-NNNNNNNN-N

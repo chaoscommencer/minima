@@ -1,0 +1,15 @@
+title: Your awesome title
+description: > # this means to ignore newlines until "rss:"
+    Write an awesome description for your new site here. You can edit this
+    line in _data/About.yml. It will appear in your document head meta
+    (for Google search results) and in your feed.xml site description.
+
+# Site RSS Feed
+rss: rss
+
+# Post Comments (powered by Disqus)
+# disqus:
+#     shortname: my_disqus_shortname
+
+# Google Analytics
+# google_analytics: UA-NNNNNNNN-N
