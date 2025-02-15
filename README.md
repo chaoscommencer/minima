@@ -145,7 +145,7 @@ date_format: "%b %-d, %Y"
 
 Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post.
 
-To enable it, add the following lines to your Jekyll site's `_data/settings.yml`:
+To enable it, add the following lines to your Jekyll site's `_data/about.yml`:
 
 ```yaml
 disqus:
@@ -200,7 +200,7 @@ author_key:
           feed: /feed.xml
 ```
 
-You can add an RSS feed for the site, with respective icon, by adding the following option in your `_data/settings.yml`:
+You can add an RSS feed for the site, with respective icon, by adding the following option in your `_data/about.yml`:
 
 ```yaml
 rss: rss
@@ -210,7 +210,7 @@ rss: rss
 
 ### Enabling Google Analytics
 
-To enable Google Analytics, add the following lines to your Jekyll site's `_data/settings.yml`:
+To enable Google Analytics, add the following lines to your Jekyll site's `_data/about.yml`:
 
 ```yaml
 google_analytics: UA-NNNNNNNN-N

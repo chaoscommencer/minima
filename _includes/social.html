@@ -36,7 +36,7 @@
     {%- endif -%}
     {%- endfor -%}
     {%- endfor -%}
-    {%- if site.data.settings.rss -%}
-    <li>{%- assign rss_feed = '/feed.xml' | relative_url -%}{%- include icon-rss.html display_name = site.data.settings.rss feed = rss_feed -%}</li>
+    {%- if site.data.about.rss -%}
+    <li>{%- assign rss_feed = '/feed.xml' | relative_url -%}{%- include icon-rss.html display_name = site.data.about.rss feed = rss_feed -%}</li>
     {%- endif -%}
 </ul>
