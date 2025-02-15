@@ -1,11 +1,5 @@
-title: Your awesome title
-author:
-    name: GitHub User
-    email: your-email@domain.com
-description: > # this means to ignore newlines until "social:"
-    Write an awesome description for your new site here. You can edit this
-    line in _data/settings.yml. It will appear in your document head meta
-    (for Google search results) and in your feed.xml site description.
+name: GitHub User
+email: your-email@domain.com
 
 # social links
 social:
@@ -39,12 +33,3 @@ social:
     # - type: rss
     #   display_name: rss
     #   feed: /feed.xml
-
-rss: rss
-
-# Post Comments (powered by Disqus)
-# disqus:
-#     shortname: my_disqus_shortname
-
-# Google Analytics
-# google_analytics: UA-NNNNNNNN-N
