@@ -30,6 +30,9 @@ rss: rss
 # disqus:
 #   shortname: my_disqus_shortname
 
+# Google Analytics
+# google_analytics: UA-NNNNNNNN-N
+
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
