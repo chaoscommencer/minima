@@ -21,6 +21,7 @@ title: Your awesome title
 # to jekyll-seo-tag--except for to `_data/authors.yml` file)
 author:
   name: GitHub User
+  email: your-email@domain.com
   twitter: jekyllrb
   # picture: /img/benbalter.png
 
@@ -61,8 +62,6 @@ author:
     # - type: rss
     #   display_name: rss
     #   feed: /feed.xml
-
-email: your-email@domain.com
 
 # A longer description for the site
 # NOTE: Used by the Jekyll Feed plugin (cannot be moved without modification to
@@ -124,8 +123,9 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.html
+# header:
+#   pages:
+#     - about.html
 
 # Build settings
 theme: minima
