@@ -1,6 +1,7 @@
 title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
+author:
+  name: GitHub User
+  email: your-email@domain.com
 description: > # this means to ignore newlines until "twitter_username:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -60,8 +61,9 @@ minima:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.html
+# header:
+#   pages:
+#     - about.html
 
 # Build settings
 theme: minima

@@ -120,9 +120,10 @@ This allows you to set which pages you want to appear in the navigation area and
 For instance, to only link to the `about` and the `portfolio` page, add the following to your `_config.yml`:
 
 ```yaml
-header_pages:
-  - about.md
-  - portfolio.md
+header:
+  pages:
+    - about.md
+    - portfolio.md
 ```
 
 --
