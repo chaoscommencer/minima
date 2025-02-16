@@ -26,6 +26,9 @@ rss: rss
 # - username: jekyll2
 #   instance: example.com
 
+# Post Comments (powered by Disqus)
+# disqus:
+#   shortname: my_disqus_shortname
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
