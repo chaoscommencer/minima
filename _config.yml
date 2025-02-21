@@ -45,3 +45,48 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
+
+#------------------
+# Content Filtering
+
+# Exclude
+# Extension of the internal default list of files and/or directories to be
+# excluded from processing.  Entries in this list will not end up in the
+# 'destination' ('_site') directory.  Path exclusions are performed relative
+# to the 'source' (repository root) directory.
+#
+# NOTE: An excluded item may be explicitly processed by listing the
+# corresponding path in the list defined by the `include` key.
+# WARNING: Dot-prefixed files and directories are excluded by default.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+exclude:
+  - CODE_OF_CONDUCT.md
+  - History.markdown
+  - LICENSE.txt
+  - minima.gemspec
+  - README.md
+  - screenshot.png
+  - theme_version.rb
+
+# Include
+# Include files and/or directories in the conversion.  Path inclusions are
+# performed relative to the 'source' (repository root) directory.
+# NOTE: Dot-prefixed files are excluded by default.
+#
+# include: [".htaccess"]
+include: []
+
+# Content Filtering
+#------------------
