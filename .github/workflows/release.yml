@@ -11,6 +11,8 @@ jobs:
   release:
     if: "github.repository_owner == 'jekyll'"
     name: "Release Gem (Ruby ${{ matrix.ruby_version }})"
+    permissions:
+      contents: read
     runs-on: "ubuntu-latest"
     strategy:
       fail-fast: true
