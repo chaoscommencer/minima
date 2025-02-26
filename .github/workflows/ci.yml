@@ -6,6 +6,9 @@ on:
   pull_request:
     branches:
       - "2.5-stable"
+  workflow_dispatch:
+    # Support manual trigger
+
 jobs:
   build:
     name: "Test with Jekyll ${{ matrix.jekyll }} (Ruby ${{ matrix.ruby }})"
