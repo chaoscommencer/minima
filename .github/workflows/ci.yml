@@ -21,7 +21,7 @@ jobs:
       JEKYLL_VERSION: ${{ matrix.jekyll }}
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: "Set Up Ruby ${{ matrix.ruby }}"
         uses: ruby/setup-ruby@32110d4e311bd8996b2a82bf2a43b714ccc91777 # v1
         with:
