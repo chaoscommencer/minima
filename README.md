@@ -121,9 +121,9 @@ For instance, to only link to the `about` and the `portfolio` page, add the foll
 
 ```yaml
 header:
-  pages:
-    - about.md
-    - portfolio.md
+    pages:
+        - about.md
+        - portfolio.md
 ```
 
 --
@@ -137,7 +137,7 @@ in `_config.yml`.
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
-  date_format: "%b %-d, %Y"
+    date_format: "%b %-d, %Y"
 ```
 
 --
@@ -150,7 +150,7 @@ To enable it, add the following lines to your Jekyll site's `_config.yml`:
 
 ```yaml
 disqus:
-  shortname: my_disqus_shortname
+    shortname: my_disqus_shortname
 ```
 
 You can find out more about Disqus' shortnames [here](https://help.disqus.com/customer/portal/articles/466208).
@@ -167,36 +167,36 @@ You can add links to the accounts you have on other sites, with respective icon,
 
 ```yaml
 social:
-  - type: dribbble
-    username: jekyll
-  - type: facebook
-    username: jekyll
-  - type: flickr
-    username: jekyll
-  - type: github
-    username:  jekyll
-  - type: instagram
-    username: jekyll
-  - type: linkedin
-    username: jekyll
-  - type:  pinterest
-    username: jekyll
-  # Mastodon instances
-  - type: mastodon
-    username: jekyll
-    instance: example.com
-  - type: mastodon
-    username: jekyll2
-    instance: example.com
-  - type: twitter
-    username: jekyllrb
-  - type: youtube
-    username: jekyll
-  - type: googleplus
-    username: +jekyll
-  - type: rss
-    display_name: rss
-    feed: /feed.xml
+    - type: dribbble
+      username: jekyll
+    - type: facebook
+      username: jekyll
+    - type: flickr
+      username: jekyll
+    - type: github
+      username:  jekyll
+    - type: instagram
+      username: jekyll
+    - type: linkedin
+      username: jekyll
+    - type:  pinterest
+      username: jekyll
+    # Mastodon instances
+    - type: mastodon
+      username: jekyll
+      instance: example.com
+    - type: mastodon
+      username: jekyll2
+      instance: example.com
+    - type: twitter
+      username: jekyllrb
+    - type: youtube
+      username: jekyll
+    - type: googleplus
+      username: +jekyll
+    - type: rss
+      display_name: rss
+      feed: /feed.xml
 
 rss: rss
 ```

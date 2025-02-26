@@ -38,11 +38,11 @@ Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin con
 
 ```html
 <html>
-  <head>
-  </head>
-  <body>
-    <p>Hello, World!</p>
-  </body>
+    <head>
+    </head>
+    <body>
+        <p>Hello, World!</p>
+    </body>
 </html>
 ```
 
