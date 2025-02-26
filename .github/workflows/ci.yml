@@ -2,10 +2,10 @@ name: Continuous Integration
 on:
     push:
         branches:
-            - "2.5-stable"
+            - "my-2.5.2-593a05a-workaround"
     pull_request:
         branches:
-            - "2.5-stable"
+            - "my-2.5.2-593a05a-workaround"
     workflow_dispatch:
         # Support manual trigger
 
