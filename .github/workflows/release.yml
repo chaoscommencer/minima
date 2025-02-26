@@ -25,7 +25,7 @@ jobs:
           ruby-version: ${{ matrix.ruby_version }}
           bundler-cache: true
       - name: Build and Publish Gem
-        uses: ashmaroli/release-gem@dist
+        uses: ashmaroli/release-gem@1a45b8631a76e8697698896fa056d2322cfc5887 # dist
         with:
           gemspec_name: minima
         env:
