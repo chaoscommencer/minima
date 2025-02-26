@@ -1,39 +1,39 @@
 name: Build Gem
 
 on:
-  push:
-    branches:
-      - "2.5-stable"
-    paths:
-      - "theme_version.rb"
-  pull_request:
-    branches:
-      - "2.5-stable"
-    paths:
-      - "theme_version.rb"
-  workflow_dispatch:
-    # Support manual trigger
+    push:
+        branches:
+            - "2.5-stable"
+        paths:
+            - "theme_version.rb"
+    pull_request:
+        branches:
+            - "2.5-stable"
+        paths:
+            - "theme_version.rb"
+    workflow_dispatch:
+        # Support manual trigger
 
 jobs:
-  build:
-    name: "Build Gem (Ruby ${{ matrix.ruby_version }})"
-    permissions:
-      contents: read
-    runs-on: "ubuntu-latest"
-    strategy:
-      fail-fast: true
-      matrix:
-        ruby_version: [ "3.4.2" ]
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-      - name: "Set up Ruby ${{ matrix.ruby_version }}"
-        uses: ruby/setup-ruby@32110d4e311bd8996b2a82bf2a43b714ccc91777 # v1
-        with:
-          ruby-version: ${{ matrix.ruby_version }}
-          bundler-cache: true
-      - name: Build Gem
-        env:
-          GEMSPEC_FILE: minima.gemspec
-        run: bundle exec gem build ${{ env.GEMSPEC_FILE }} --verbose
-        shell: bash
+    build:
+        name: "Build Gem (Ruby ${{ matrix.ruby_version }})"
+        permissions:
+            contents: read
+        runs-on: "ubuntu-latest"
+        strategy:
+            fail-fast: true
+            matrix:
+                ruby_version: [ "3.4.2" ]
+        steps:
+            - name: Checkout Repository
+              uses: actions/checkout@v4
+            - name: "Set up Ruby ${{ matrix.ruby_version }}"
+              uses: ruby/setup-ruby@32110d4e311bd8996b2a82bf2a43b714ccc91777 # v1
+              with:
+                  ruby-version: ${{ matrix.ruby_version }}
+                  bundler-cache: true
+            - name: Build Gem
+              env:
+                  GEMSPEC_FILE: minima.gemspec
+              run: bundle exec gem build ${{ env.GEMSPEC_FILE }} --verbose
+              shell: bash

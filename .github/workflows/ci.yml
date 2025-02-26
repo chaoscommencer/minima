@@ -1,34 +1,34 @@
 name: Continuous Integration
 on:
-  push:
-    branches:
-      - "2.5-stable"
-  pull_request:
-    branches:
-      - "2.5-stable"
-  workflow_dispatch:
-    # Support manual trigger
+    push:
+        branches:
+            - "2.5-stable"
+    pull_request:
+        branches:
+            - "2.5-stable"
+    workflow_dispatch:
+        # Support manual trigger
 
 jobs:
-  build:
-    name: "Test with Jekyll ${{ matrix.jekyll }} (Ruby ${{ matrix.ruby }})"
-    permissions:
-      contents: read
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        jekyll: ["~> 4.4"]
-        ruby: ["2.7.8", "3.4.2"]
-    env:
-      JEKYLL_VERSION: ${{ matrix.jekyll }}
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-      - name: "Set Up Ruby ${{ matrix.ruby }}"
-        uses: ruby/setup-ruby@32110d4e311bd8996b2a82bf2a43b714ccc91777 # v1
-        with:
-          ruby-version: ${{ matrix.ruby }}
-          bundler-cache: true
-      - name: Run tests
-        run: script/cibuild
+    build:
+        name: "Test with Jekyll ${{ matrix.jekyll }} (Ruby ${{ matrix.ruby }})"
+        permissions:
+            contents: read
+        runs-on: ubuntu-latest
+        strategy:
+            fail-fast: false
+            matrix:
+                jekyll: ["~> 4.4"]
+                ruby: ["2.7.8", "3.4.2"]
+        env:
+            JEKYLL_VERSION: ${{ matrix.jekyll }}
+        steps:
+            - name: Checkout Repository
+              uses: actions/checkout@v4
+            - name: "Set Up Ruby ${{ matrix.ruby }}"
+              uses: ruby/setup-ruby@32110d4e311bd8996b2a82bf2a43b714ccc91777 # v1
+              with:
+                  ruby-version: ${{ matrix.ruby }}
+                  bundler-cache: true
+            - name: Run tests
+              run: script/cibuild

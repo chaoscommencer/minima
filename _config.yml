@@ -20,48 +20,48 @@ title: Your awesome title
 # NOTE: Used by the Jekyll SEO Tag plugin (cannot be moved without modification
 # to jekyll-seo-tag--except for to `_data/authors.yml` file)
 author:
-  name: GitHub User
-  email: your-email@domain.com
-  twitter: jekyllrb
-  # picture: /img/benbalter.png
+    name: GitHub User
+    email: your-email@domain.com
+    twitter: jekyllrb
+    # picture: /img/benbalter.png
 
-  # Starting from August 6, 2021 [Google recommends](https://developers.google.com/search/updates) to set the author.url
-  # property. This property helps Google to disambiguate the correct author
-  # of the article.
-  # url:
+    # Starting from August 6, 2021 [Google recommends](https://developers.google.com/search/updates) to set the author.url
+    # property. This property helps Google to disambiguate the correct author
+    # of the article.
+    # url:
 
-  # social links
-  social:
-    # - type: dribbble
-    #   username: jekyll
-    # - type: facebook
-    #   username: jekyll
-    # - type: flickr
-    #   username: jekyll
-    - type: github
-      username:  jekyll
-    # - type: instagram
-    #   username: jekyll
-    # - type: linkedin
-    #   username: jekyll
-    # - type:  pinterest
-    #   username: jekyll
-    # Mastodon instances
-    # - type: mastodon
-    #   username: jekyll
-    #   instance: example.com
-    # - type: mastodon
-    #   username: jekyll2
-    #   instance: example.com
-    - type: twitter
-      username: jekyllrb
-    # - type: youtube
-    #   username: jekyll
-    # - type: googleplus
-    #   username: +jekyll
-    # - type: rss
-    #   display_name: rss
-    #   feed: /feed.xml
+    # social links
+    social:
+        # - type: dribbble
+        #   username: jekyll
+        # - type: facebook
+        #   username: jekyll
+        # - type: flickr
+        #   username: jekyll
+        - type: github
+          username:  jekyll
+        # - type: instagram
+        #   username: jekyll
+        # - type: linkedin
+        #   username: jekyll
+        # - type:  pinterest
+        #   username: jekyll
+        # Mastodon instances
+        # - type: mastodon
+        #   username: jekyll
+        #   instance: example.com
+        # - type: mastodon
+        #   username: jekyll2
+        #   instance: example.com
+        - type: twitter
+          username: jekyllrb
+        # - type: youtube
+        #   username: jekyll
+        # - type: googleplus
+        #   username: +jekyll
+        # - type: rss
+        #   display_name: rss
+        #   feed: /feed.xml
 
 # A longer description for the site
 # NOTE: Used by the Jekyll Feed plugin (cannot be moved without modification to
@@ -69,44 +69,44 @@ author:
 # NOTE: Used by the Jekyll SEO Tag plugin (cannot be moved without modification
 # to jekyll-seo-tag)
 description: > # this means to ignore newlines until "twitter_username:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+    Write an awesome description for your new site here. You can edit this
+    line in _config.yml. It will appear in your document head meta (for
+    Google search results) and in your feed.xml site description.
 
 # Social profile definitions
 # NOTE: Used by the Jekyll SEO Tag plugin (cannot be moved without modification
 # to jekyll-seo-tag)
 social:
-  # If the user or organization name differs from the site's name
-  name: Ben Balter
+    # If the user or organization name differs from the site's name
+    name: Ben Balter
 
-  # Array of links to social media profiles.
-  links:
-    - https://twitter.com/BenBalter
-    - https://www.facebook.com/ben.balter
-    - https://www.linkedin.com/in/BenBalter
-    - https://github.com/benbalter
-    - https://keybase.io/benbalter
-    - https://dribbble.com/jekyll
-    - https://www.facebook.com/jekyll
-    - https://www.flickr.com/photos/jekyll
-    - https://github.com/jekyll
-    - https://instagram.com/jekyll
-    - https://www.linkedin.com/in/jekyll
-    - https://www.pinterest.com/jekyll
-    - https://example.com/@jekyll
-    - https://example.com/@jekyll2
-    - https://www.twitter.com/jekyllrb
-    - https://youtube.com/jekyll
-    - https://plus.google.com/+jekyll
-    - feed.xml
+    # Array of links to social media profiles.
+    links:
+        - https://twitter.com/BenBalter
+        - https://www.facebook.com/ben.balter
+        - https://www.linkedin.com/in/BenBalter
+        - https://github.com/benbalter
+        - https://keybase.io/benbalter
+        - https://dribbble.com/jekyll
+        - https://www.facebook.com/jekyll
+        - https://www.flickr.com/photos/jekyll
+        - https://github.com/jekyll
+        - https://instagram.com/jekyll
+        - https://www.linkedin.com/in/jekyll
+        - https://www.pinterest.com/jekyll
+        - https://example.com/@jekyll
+        - https://example.com/@jekyll2
+        - https://www.twitter.com/jekyllrb
+        - https://youtube.com/jekyll
+        - https://plus.google.com/+jekyll
+        - feed.xml
 
 # Site RSS Feed
 rss: rss
 
 # Post Comments (powered by Disqus)
 # disqus:
-#   shortname: my_disqus_shortname
+#     shortname: my_disqus_shortname
 
 # Google Analytics
 # google_analytics: UA-NNNNNNNN-N
@@ -119,20 +119,20 @@ show_excerpts: false # set to true to show excerpts on the homepage
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
-  date_format: "%b %-d, %Y"
+    date_format: "%b %-d, %Y"
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 # header:
-#   pages:
-#     - about.html
+#     pages:
+#         - about.html
 
 # Build settings
 theme: minima
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+    - jekyll-feed
+    - jekyll-seo-tag
 
 
 #------------------
@@ -149,25 +149,25 @@ plugins:
 # WARNING: Dot-prefixed files and directories are excluded by default.
 #
 # exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+#     - .sass-cache/
+#     - .jekyll-cache/
+#     - gemfiles/
+#     - Gemfile
+#     - Gemfile.lock
+#     - node_modules/
+#     - vendor/bundle/
+#     - vendor/cache/
+#     - vendor/gems/
+#     - vendor/ruby/
 exclude:
-  - vendor/
-  - CODE_OF_CONDUCT.md
-  - History.markdown
-  - LICENSE.txt
-  - minima.gemspec
-  - README.md
-  - screenshot.png
-  - theme_version.rb
+    - vendor/
+    - CODE_OF_CONDUCT.md
+    - History.markdown
+    - LICENSE.txt
+    - minima.gemspec
+    - README.md
+    - screenshot.png
+    - theme_version.rb
 
 # Include
 # Include files and/or directories in the conversion.  Path inclusions are
@@ -194,9 +194,9 @@ include: []
 # A longer description of what your site is about, e.g., "Where I blog about
 # Jekyll and other awesome things"
 # description: > # this means to ignore newlines until "url:"
-#   Write an awesome description for your new site here. You can edit this
-#   line in _data/about.yml. It will appear in your document head meta
-#   (for Google search results) and in your feed.xml site description.
+#     Write an awesome description for your new site here. You can edit this
+#     line in _data/about.yml. It will appear in your document head meta
+#     (for Google search results) and in your feed.xml site description.
 
 # The URL to your site, e.g., https://example.com. If none is provided, the
 # plugin will try to use site.github.url.
@@ -207,11 +207,11 @@ include: []
 # NOTE: To account for multiple authors, instead complete author information in
 # `_data/authors.yml`
 # benbalter:
-#   picture: /img/benbalter.png
-#   twitter: jekyllrb
+#     picture: /img/benbalter.png
+#     twitter: jekyllrb
 # potus:
-#   picture: /img/potus.png
-#   twitter: whitehouse
+#     picture: /img/potus.png
+#     twitter: whitehouse
 
 # Meta tags
 # The plugin exposes a helper tag to expose the appropriate meta tags to
@@ -220,79 +220,79 @@ include: []
 
 # Feed Customization
 # feed:
-  # Icon with 1:1 proportions for readers to use for the blog feed (not
-  # supported by all readers; often overridden by a favicon or site icon)
-  # icon: /images/icon.png
+    # Icon with 1:1 proportions for readers to use for the blog feed (not
+    # supported by all readers; often overridden by a favicon or site icon)
+    # icon: /images/icon.png
 
-  # Logo with 2:1 proportions for readers to use for the blog feed (not
-  # supported by all readers).
-  # logo: /images/logo.png
+    # Logo with 2:1 proportions for readers to use for the blog feed (not
+    # supported by all readers).
+    # logo: /images/logo.png
 
-  # A non-default feed path
-  # WARNING: You shouldn't have to do this unless you already have a feed
-  # you're using, and you can't or wish not to redirect existing subscribers
-  # path: /blog/feed.atom
+    # A non-default feed path
+    # WARNING: You shouldn't have to do this unless you already have a feed
+    # you're using, and you can't or wish not to redirect existing subscribers
+    # path: /blog/feed.atom
 
-  # Jekyll Feed can generate feeds for each category. Simply define desired
-  # categories as follows:
-  # categories:
-  #   - news
-  #   - updates
+    # Jekyll Feed can generate feeds for each category. Simply define desired
+    # categories as follows:
+    # categories:
+    #     - news
+    #     - updates
 
-  # A limit for the number of posts displayed in the feed (default 10)
-  # posts_limit: 20
+    # A limit for the number of posts displayed in the feed (default 10)
+    # posts_limit: 20
 
-  # Supporting Feeds for Custom Collections
-  # Generate feeds for [chronological (e.g., collections with dates in the
-  # filenames)] collections other than the Posts collection
-  # collections:
-  #   - changes
+    # Supporting Feeds for Custom Collections
+    # Generate feeds for [chronological (e.g., collections with dates in the
+    # filenames)] collections other than the Posts collection
+    # collections:
+    #     - changes
 
-  # NOTE: To specify a custom output path or select categories for the
-  # associated custom collection, instead define collections as follows:
-  # collections:
-  #   changes:
-  #     # Custom [optional] feed output path
-  #     path: "/changes.atom"
-  #     # Collections can also have [optional] category feeds that are
-  #     # generated at `/feed/<COLLECTION>/<CATEGORY>.xml`
-  #     categories:
-  #       - news
-  #       - updates
+    # NOTE: To specify a custom output path or select categories for the
+    # associated custom collection, instead define collections as follows:
+    # collections:
+    #     changes:
+    #         # Custom [optional] feed output path
+    #         path: "/changes.atom"
+    #         # Collections can also have [optional] category feeds that are
+    #         # generated at `/feed/<COLLECTION>/<CATEGORY>.xml`
+    #         categories:
+    #             - news
+    #             - updates
 
-  # [Optional] flag supporting exclusion of post content from the Atom feed
-  # (default false--for backward compatibility).  Disables the <content> tag
-  # for all posts.
-  # NOTE: May be overridden (on a per-post basis) in corresponding post front
-  # matter.
-  # excerpt_only: true
+    # [Optional] flag supporting exclusion of post content from the Atom feed
+    # (default false--for backward compatibility).  Disables the <content> tag
+    # for all posts.
+    # NOTE: May be overridden (on a per-post basis) in corresponding post front
+    # matter.
+    # excerpt_only: true
 
-  # To automatically generate feeds for each tag you apply to your posts:
-  # tags: true
-  # NOTE: Alternatively, generate feeds for specific tags or ignoring specific
-  # tags as follows:
-  # tags:
-    # To disable auto-generation on a per-tag basis, exclude posts tagged:
-    # except:
-    #   - tag-to-exclude
-    #   - another-tag
-    # NOTE: Including a tag that is excluded will result in a feed not being
-    # generated for the corresponding post(s).
+    # To automatically generate feeds for each tag you apply to your posts:
+    # tags: true
+    # NOTE: Alternatively, generate feeds for specific tags or ignoring specific
+    # tags as follows:
+    # tags:
+        # To disable auto-generation on a per-tag basis, exclude posts tagged:
+        # except:
+        #     - tag-to-exclude
+        #     - another-tag
+        # NOTE: Including a tag that is excluded will result in a feed not being
+        # generated for the corresponding post(s).
 
-    # To generate feeds for only specified tags:
-    # only:
-    #   - tag-to-include
-    #   - another-tag
+        # To generate feeds for only specified tags:
+        # only:
+        #     - tag-to-include
+        #     - another-tag
 
-    # To change the location of these auto-generated feeds
-    # (`/feed/by_tag/<TAG>.xml` by default), provide an alternative folder
-    # as follows:
-    # path: "alternative/path/for/tags/feeds/"
+        # To change the location of these auto-generated feeds
+        # (`/feed/by_tag/<TAG>.xml` by default), provide an alternative folder
+        # as follows:
+        # path: "alternative/path/for/tags/feeds/"
 
-  # Disable feed generation when `jekyll.environment == "development"`, but
-  # don't want to remove the plugin (so you don't accidentally commit the
-  # removal). Default value is false.
-  # disable_in_development: true
+    # Disable feed generation when `jekyll.environment == "development"`, but
+    # don't want to remove the plugin (so you don't accidentally commit the
+    # removal). Default value is false.
+    # disable_in_development: true
 
 
 # Custom Feed Styling
@@ -330,7 +330,7 @@ include: []
 # controlling the exclusion of post content from the Atom feed.  Disables the
 # <content> tag for corresponding post.
 # feed:
-#   excerpt_only: true
+#     excerpt_only: true
 
 # Jekyll Feed Plugin
 #-------------------
@@ -373,9 +373,9 @@ include: []
 # for pages that don't provide their own description, and also as part of the
 # page's title tag if neither page.title nor site.tagline has been defined.
 # description: > # this means to ignore newlines until "url:"
-#   Write an awesome description for your new site here. You can edit this
-#   line in _data/about.yml. It will appear in your document head meta
-#   (for Google search results) and in your feed.xml site description.
+#     Write an awesome description for your new site here. You can edit this
+#     line in _data/about.yml. It will appear in your document head meta
+#     (for Google search results) and in your feed.xml site description.
 
 # The full URL to your site. Note: site.github.url will be used by default.
 # url: https://example.com
@@ -391,35 +391,35 @@ include: []
 # `_data/authors.yml`.  Specify the appropriate author as the object field name
 # in each [post/page/etc.]'s front matter.
 # benbalter:
-#   picture: /img/benbalter.png
-#   twitter: jekyllrb
-#   # Starting from August 6, 2021 [Google recommends](https://developers.google.com/search/updates) to set the author.url
-#   # property. This property helps Google to disambiguate the correct author
-#   # of the article.
-#   url:
+#     picture: /img/benbalter.png
+#     twitter: jekyllrb
+#     # Starting from August 6, 2021 [Google recommends](https://developers.google.com/search/updates) to set the author.url
+#     # property. This property helps Google to disambiguate the correct author
+#     # of the article.
+#     url:
 # potus:
-#   picture: /img/potus.png
-#   twitter: whitehouse
-#   url:
+#     picture: /img/potus.png
+#     twitter: whitehouse
+#     url:
 
 # The following properties are available (card, username)
 # twitter:
-  # The site's Twitter handle.
-  # username: benbalter
+    # The site's Twitter handle.
+    # username: benbalter
 
-  # The site's default card type
-  # card: summary
+    # The site's default card type
+    # card: summary
 
 # The following properties are available (app_id, publisher, admins)
 # facebook:
-  # A Facebook app ID for Facebook insights
-  # app_id: 1234
+    # A Facebook app ID for Facebook insights
+    # app_id: 1234
 
-  # A Facebook page URL or ID of the publishing entity
-  # publisher: 1234
+    # A Facebook page URL or ID of the publishing entity
+    # publisher: 1234
 
-  # A Facebook user ID for domain insights linked to a personal account
-  # admins: 1234
+    # A Facebook user ID for domain insights linked to a personal account
+    # admins: 1234
 
 # URL to a site-wide logo
 # NOTE: Required for the "publisher" property to be present.  During validation
@@ -430,28 +430,28 @@ include: []
 
 # Social profile definitions
 # social:
-  # If the user or organization name differs from the site's name
-  # name: Ben Balter
+    # If the user or organization name differs from the site's name
+    # name: Ben Balter
 
-  # Array of links to social media profiles.
-  # links:
-  #   - https://twitter.com/BenBalter
-  #   - https://www.facebook.com/ben.balter
-  #   - https://www.linkedin.com/in/BenBalter
-  #   - https://github.com/benbalter
-  #   - https://keybase.io/benbalter
+    # Array of links to social media profiles.
+    # links:
+    #     - https://twitter.com/BenBalter
+    #     - https://www.facebook.com/ben.balter
+    #     - https://www.linkedin.com/in/BenBalter
+    #     - https://github.com/benbalter
+    #     - https://keybase.io/benbalter
 
 # Verify ownership via Google Search Console
 # google_site_verification: true
 # NOTE: Alternatively, verify ownership with several services simultaneously
 # using the following format:
 # webmaster_verifications:
-#   google: 1234
-#   bing: 1234
-#   alexa: 1234
-#   yandex: 1234
-#   baidu: 1234
-#   facebook: 1234
+#     google: 1234
+#     bing: 1234
+#     alexa: 1234
+#     yandex: 1234
+#     baidu: 1234
+#     facebook: 1234
 
 # The locale these tags are marked up in. Of the format `language_TERRITORY`
 # (defaults to `en_US`).
@@ -486,17 +486,17 @@ include: []
 # [`defaults`](https://jekyllrb.com/docs/configuration/front-matter-defaults/)
 # NOTE: Alternatively, detail [optional] image properties as follows:
 # image:
-  # The relative path to the image. Same as image: [path-to-image]
-  # path: /img/twitter.png
+    # The relative path to the image. Same as image: [path-to-image]
+    # path: /img/twitter.png
 
-  # The height of the Open Graph (og:image) image
-  # height: 100
+    # The height of the Open Graph (og:image) image
+    # height: 100
 
-  # The width of the Open Graph (og:image) image
-  # width: 100
+    # The width of the Open Graph (og:image) image
+    # width: 100
 
-  # The alternative image text for Open Graph (og:image:alt) and Twitter (twitter:image:alt)
-  # alt: Twitter Logo
+    # The alternative image text for Open Graph (og:image:alt) and Twitter (twitter:image:alt)
+    # alt: Twitter Logo
 
 
 # Page-, post-, or document-specific author information (see Advanced usage)
@@ -512,32 +512,32 @@ include: []
 # options are meant to serve most users in the most common circumstances, there
 # may be situations where more precise control is necessary.
 # seo:
-  # If the name of the thing that the page represents is different from the
-  # page title. (i.e.: "Frank's Café" vs "Welcome to Frank's Café")
-  # name: Frank's Café
+    # If the name of the thing that the page represents is different from the
+    # page title. (i.e.: "Frank's Café" vs "Welcome to Frank's Café")
+    # name: Frank's Café
 
-  # The type of things that the page represents. This must be a [Schema.org
-  # type](https://schema.org/docs/schemas.html), and will probably usually be something like [BlogPosting](https://schema.org/BlogPosting),
-  # [NewsArticle](https://schema.org/NewsArticle), [Person](https://schema.org/Person), [Organization](https://schema.org/Organization), etc.
-  # type: NewsArticle
+    # The type of things that the page represents. This must be a [Schema.org
+    # type](https://schema.org/docs/schemas.html), and will probably usually be something like [BlogPosting](https://schema.org/BlogPosting),
+    # [NewsArticle](https://schema.org/NewsArticle), [Person](https://schema.org/Person), [Organization](https://schema.org/Organization), etc.
+    # type: NewsArticle
 
-  # An array of other URLs that represent the same thing that this page
-  # represents. For instance, Jane's bio page might include links to Jane's
-  # GitHub and Twitter profiles.
-  # links:
-  #   - https://twitter.com/BenBalter
-  #   - https://www.facebook.com/ben.balter
-  #   - https://www.linkedin.com/in/BenBalter
-  #   - https://github.com/benbalter
-  #   - https://keybase.io/benbalter
+    # An array of other URLs that represent the same thing that this page
+    # represents. For instance, Jane's bio page might include links to Jane's
+    # GitHub and Twitter profiles.
+    # links:
+    #     - https://twitter.com/BenBalter
+    #     - https://www.facebook.com/ben.balter
+    #     - https://www.linkedin.com/in/BenBalter
+    #     - https://github.com/benbalter
+    #     - https://keybase.io/benbalter
 
-  # Manually specify the dateModified field in the JSON-LD output to override
-  # Jekyll's own dateModified. This field will take first priority for the
-  # dateModified JSON-LD output. This is useful when the file timestamp does
-  # not match the true time that the content was modified. A user may also
-  # install [Last Modified At](https://github.com/gjtorikian/jekyll-last-modified-at) which will offer an alternative way of providing
-  # for the dateModified field.
-  # date_modified:
+    # Manually specify the dateModified field in the JSON-LD output to override
+    # Jekyll's own dateModified. This field will take first priority for the
+    # dateModified JSON-LD output. This is useful when the file timestamp does
+    # not match the true time that the content was modified. A user may also
+    # install [Last Modified At](https://github.com/gjtorikian/jekyll-last-modified-at) which will offer an alternative way of providing
+    # for the dateModified field.
+    # date_modified:
 
 # Custom Canonical URL for a page (defaults to page url
 # "https://example.com/title-of-your-post")
