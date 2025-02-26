@@ -6,6 +6,8 @@ on:
       - "2.5-stable"
     paths:
       - "theme_version.rb"
+  workflow_dispatch:
+    # Support manual trigger
 
 jobs:
   release:
