@@ -3,8 +3,13 @@
 source "https://rubygems.org"
 gemspec
 
-gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
-gem "kramdown-parser-gfm" if ENV["JEKYLL_VERSION"] == "~> 3.9"
+JEKYLL_GEM_NAME = "jekyll"
+JEKYLL_GEM_VERSION = ENV["JEKYLL_VERSION"]
+unless JEKYLL_GEM_VERSION.nil?
+  gem JEKYLL_GEM_NAME, JEKYLL_GEM_VERSION
+  # Include kramdown-parser-gfm Gem for Jekyll versions >=3.9, but <4.0 (~> 3.9)
+  gem "kramdown-parser-gfm" if ENV["JEKYLL_VERSION"] == "~> 3.9"
+end
 
 # NOTE: Gem::Version.new required to support Ruby version 2.7 in which
 # RUBY_VERSION constant is a string instead of a version object
