@@ -27,6 +27,9 @@ jobs:
           ruby-version: ${{ matrix.ruby_version }}
           bundler-cache: true
       - name: Build and Publish Gem
+        # Disable this step to prevent attempts to publish to the minima
+        # Gem
+        if: false
         uses: ashmaroli/release-gem@1a45b8631a76e8697698896fa056d2322cfc5887 # dist
         with:
           gemspec_name: minima
