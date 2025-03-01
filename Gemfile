@@ -7,10 +7,6 @@ JEKYLL_GEM_NAME = "jekyll"
 JEKYLL_GEM_VERSION = ENV["JEKYLL_VERSION"]
 unless JEKYLL_GEM_VERSION.nil?
   gem JEKYLL_GEM_NAME, JEKYLL_GEM_VERSION
-  # Include kramdown-parser-gfm Gem for Jekyll versions >=3.9, but <4.0 (~> 3.9)
-  # NOTE: Don't match greater than symbol, which may resolve to Jekyll 4 or
-  # higher
-  gem "kramdown-parser-gfm" if JEKYLL_GEM_VERSION.match(/^\s*(?!>).+(?<![\.\d])3\.(9|\d{2,})(\.\d+)?$/)
 end
 
 # NOTE: Gem::Version.new required to support Ruby version 2.7 in which
