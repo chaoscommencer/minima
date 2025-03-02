@@ -3,12 +3,12 @@ name: Build Gem
 on:
     push:
         branches:
-            - "2.5-stable"
+            - "my-2.5.2-593a05a"
         paths:
             - "theme_version.rb"
     pull_request:
         branches:
-            - "2.5-stable"
+            - "my-2.5.2-593a05a"
         paths:
             - "theme_version.rb"
     workflow_dispatch:
