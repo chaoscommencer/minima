@@ -8,13 +8,13 @@
 
 ## Installation
 
-Add this line to your Jekyll site's Gemfile:
+Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
 gem "minima"
 ```
 
-And add this line to your Jekyll site:
+And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
 theme: minima
@@ -116,7 +116,7 @@ The site's default CSS has now moved to a new place within the gem itself, [`ass
 
 This allows you to set which pages you want to appear in the navigation area and configure order of the links.
 
-For instance, to only link to the `about` and the `portfolio` page, add the following to you `_config.yml`:
+For instance, to only link to the `about` and the `portfolio` page, add the following to your `_config.yml`:
 
 ```yaml
 header_pages:
@@ -128,7 +128,7 @@ header_pages:
 
 ### Change default date format
 
-You can change the default date format by specifying `site.minima.date_format`
+You can change the default date format by specifying `minima.date_format`
 in `_config.yml`.
 
 ```yaml
@@ -144,11 +144,11 @@ minima:
 
 Optionally, if you have a Disqus account, you can tell Jekyll to use it to show a comments section below each post.
 
-To enable it, add the following lines to your Jekyll site:
+To enable it, add the following lines to your Jekyll site's `_config.yml`:
 
 ```yaml
-  disqus:
-    shortname: my_disqus_shortname
+disqus:
+  shortname: my_disqus_shortname
 ```
 
 You can find out more about Disqus' shortnames [here](https://help.disqus.com/customer/portal/articles/466208).
@@ -161,7 +161,7 @@ If you don't want to display comments for a particular post you can disable them
 
 ### Social networks
 
-You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your config:
+You can add links to the accounts you have on other sites, with respective icon, by adding one or more of the following options in your `_config.yml`:
 
 ```yaml
 twitter_username: jekyllrb
@@ -187,13 +187,13 @@ mastodon:
 
 ### Enabling Google Analytics
 
-To enable Google Analytics, add the following lines to your Jekyll site:
+To enable Google Analytics, add the following lines to your Jekyll site's `_config.yml`:
 
 ```yaml
-  google_analytics: UA-NNNNNNNN-N
+google_analytics: UA-NNNNNNNN-N
 ```
 
-Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
+Google Analytics will only appear in production, i.e. `JEKYLL_ENV=production`.
 
 --
 
