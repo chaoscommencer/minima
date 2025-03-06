@@ -1,25 +1,73 @@
 # The title/name of the site
 # NOTE: Used by the Jekyll Feed plugin (cannot be moved without modification to
 # jekyll-feed)
+# NOTE: Used by the Jekyll SEO Tag plugin (cannot be moved without modification
+# to jekyll-seo-tag)
 title: Your awesome title
 
-# Global author information.
+# Global author information is used to propagate the creator field of Twitter
+# summary cards.  This should be an author-specific, not site-wide Twitter
+# handle (the site-wide username should be stored as site.twitter.username
+# instead).
+# author: <Twitter_handle_without_@_prefix>
+# NOTE: For this and the following, the actual Twitter handle is resolved to
+# "@<Twitter_handle_without_@_prefix>"
+# NOTE: To account for multiple authors, instead complete author information in
+# `_data/authors.yml`.  Specify the appropriate author as the object field name
+# in each [post/page/etc.]'s front matter.
 # NOTE: Used by the Jekyll Feed plugin (cannot be moved without modification to
 # jekyll-feed--except for to `_data/authors.yml` file)
+# NOTE: Used by the Jekyll SEO Tag plugin (cannot be moved without modification
+# to jekyll-seo-tag--except for to `_data/authors.yml` file)
 author:
   name: GitHub User
   twitter: jekyllrb
   # picture: /img/benbalter.png
+
+  # Starting from August 6, 2021 [Google recommends](https://developers.google.com/search/updates) to set the author.url
+  # property. This property helps Google to disambiguate the correct author
+  # of the article.
+  # url:
 
 email: your-email@domain.com
 
 # A longer description for the site
 # NOTE: Used by the Jekyll Feed plugin (cannot be moved without modification to
 # jekyll-feed)
+# NOTE: Used by the Jekyll SEO Tag plugin (cannot be moved without modification
+# to jekyll-seo-tag)
 description: > # this means to ignore newlines until "twitter_username:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
+
+# Social profile definitions
+# NOTE: Used by the Jekyll SEO Tag plugin (cannot be moved without modification
+# to jekyll-seo-tag)
+social:
+  # If the user or organization name differs from the site's name
+  name: Ben Balter
+
+  # Array of links to social media profiles.
+  links:
+    - https://twitter.com/BenBalter
+    - https://www.facebook.com/ben.balter
+    - https://www.linkedin.com/in/BenBalter
+    - https://github.com/benbalter
+    - https://keybase.io/benbalter
+    - https://dribbble.com/jekyll
+    - https://www.facebook.com/jekyll
+    - https://www.flickr.com/photos/jekyll
+    - https://github.com/jekyll
+    - https://instagram.com/jekyll
+    - https://www.linkedin.com/in/jekyll
+    - https://www.pinterest.com/jekyll
+    - https://example.com/@jekyll
+    - https://example.com/@jekyll2
+    - https://www.twitter.com/jekyllrb
+    - https://youtube.com/jekyll
+    - https://plus.google.com/+jekyll
+    - feed.xml
 
 # social links
 twitter_username: jekyllrb
@@ -270,3 +318,216 @@ include: []
 
 # Jekyll Feed Plugin
 #-------------------
+
+
+#----------------------
+# Jekyll SEO Tag Plugin
+
+# https://github.com/jekyll/jekyll-seo-tag
+# The Jekyll SEO Tag plugin automatically adds the following metadata tags for
+# search engines and social networks to better index and display site content:
+# - Page title, with site title or description appended
+# - Page description
+# - Canonical URL
+# - Next and previous URLs on paginated pages
+# - JSON-LD Site and post metadata for richer indexing
+# - Open Graph title, description, site title, and URL (for Facebook, LinkedIn, etc.)
+# - Twitter Summary Card metadata
+
+# Meta tags
+# The plugin exposes a helper tag to expose the appropriate meta tags to
+# support included features. Simply place `{% seo %}` at the end of the
+# template's <head> section to output the necessary metadata.
+# NOTE: If for some reason, you don't want the plugin to output <title> tags on
+# each page, simply pass `title=false` as an argument to the liquid including
+# seo (e.g.  `{% seo title=false %}`).
+
+# Your site's title (e.g., Ben's Awesome Site, The GitHub Blog, etc.), used as
+# part of the title tag like Home | Ben's Awesome Site.
+# title: Your awesome title
+
+# A short description (e.g., A blog dedicated to reviewing cat gifs), used as
+# part of the title tag like Ben's Awesome Site | A blog dedicated to reviewing
+# cat gifs instead of Ben's Awesome Site | Long description about a blog
+# dedicated to reviewing cat gifs that would be used when page.title is not
+# defined.
+# tagline: A blog dedicated to reviewing cat gifs
+
+# A longer description used for the description meta tag. Also used as fallback
+# for pages that don't provide their own description, and also as part of the
+# page's title tag if neither page.title nor site.tagline has been defined.
+# description: > # this means to ignore newlines until "url:"
+#   Write an awesome description for your new site here. You can edit this
+#   line in _data/about.yml. It will appear in your document head meta
+#   (for Google search results) and in your feed.xml site description.
+
+# The full URL to your site. Note: site.github.url will be used by default.
+# url: https://example.com
+
+# Global author information is used to propagate the creator field of Twitter
+# summary cards.  This should be an author-specific, not site-wide Twitter
+# handle (the site-wide username should be stored as site.twitter.username
+# instead).
+# author: <Twitter_handle_without_@_prefix>
+# NOTE: For this and the following, the actual Twitter handle is resolved to
+# "@<Twitter_handle_without_@_prefix>"
+# NOTE: To account for multiple authors, instead complete author information in
+# `_data/authors.yml`.  Specify the appropriate author as the object field name
+# in each [post/page/etc.]'s front matter.
+# benbalter:
+#   picture: /img/benbalter.png
+#   twitter: jekyllrb
+#   # Starting from August 6, 2021 [Google recommends](https://developers.google.com/search/updates) to set the author.url
+#   # property. This property helps Google to disambiguate the correct author
+#   # of the article.
+#   url:
+# potus:
+#   picture: /img/potus.png
+#   twitter: whitehouse
+#   url:
+
+# The following properties are available (card, username)
+# twitter:
+  # The site's Twitter handle.
+  # username: benbalter
+
+  # The site's default card type
+  # card: summary
+
+# The following properties are available (app_id, publisher, admins)
+# facebook:
+  # A Facebook app ID for Facebook insights
+  # app_id: 1234
+
+  # A Facebook page URL or ID of the publishing entity
+  # publisher: 1234
+
+  # A Facebook user ID for domain insights linked to a personal account
+  # admins: 1234
+
+# URL to a site-wide logo
+# NOTE: Required for the "publisher" property to be present.  During validation
+# of the structured data by Google Search Console, if the logo field is not
+# validated, you will find errors inherent to the publisher in the Rich Results
+# Testing Tool
+# logo: /assets/your-company-logo.png
+
+# Social profile definitions
+# social:
+  # If the user or organization name differs from the site's name
+  # name: Ben Balter
+
+  # Array of links to social media profiles.
+  # links:
+  #   - https://twitter.com/BenBalter
+  #   - https://www.facebook.com/ben.balter
+  #   - https://www.linkedin.com/in/BenBalter
+  #   - https://github.com/benbalter
+  #   - https://keybase.io/benbalter
+
+# Verify ownership via Google Search Console
+# google_site_verification: true
+# NOTE: Alternatively, verify ownership with several services simultaneously
+# using the following format:
+# webmaster_verifications:
+#   google: 1234
+#   bing: 1234
+#   alexa: 1234
+#   yandex: 1234
+#   baidu: 1234
+#   facebook: 1234
+
+# The locale these tags are marked up in. Of the format `language_TERRITORY`
+# (defaults to `en_US`).
+# NOTE: Takes priority over existing config key `lang`.
+# locale: en_US
+
+# Customizing title modifier for paginated pages
+# Title modifier for paginated pages (defaults to `Page %{current} of %{total} for`)
+# NOTE: While the value can be any string text, using a Ruby string-template
+# containing the variables current and total similar to the example below will
+# incorporate the current page-number and total number of paginated pages in
+# the title.
+# seo_paginator_message: "%<current>s / %<total>s | "
+
+# The SEO tag will respect the following YAML front matter if included in a
+# post, page, or document...
+
+# The title of the post, page, or document
+# title:
+
+# A short description of the page's content
+# description:
+
+# The description word count limit (defaults to 100) of the full content
+# NOTE: Can be set globally using a scope with path: "" in `_config.yml`
+# [`defaults`](https://jekyllrb.com/docs/configuration/front-matter-defaults/)
+# seo_description_max_words: 200
+
+# URL to an image associated with the post, page, or document
+# image: /assets/page-pic.jpg
+# NOTE: Can be set globally using a scope with path: "" in `_config.yml`
+# [`defaults`](https://jekyllrb.com/docs/configuration/front-matter-defaults/)
+# NOTE: Alternatively, detail [optional] image properties as follows:
+# image:
+  # The relative path to the image. Same as image: [path-to-image]
+  # path: /img/twitter.png
+
+  # The height of the Open Graph (og:image) image
+  # height: 100
+
+  # The width of the Open Graph (og:image) image
+  # width: 100
+
+  # The alternative image text for Open Graph (og:image:alt) and Twitter (twitter:image:alt)
+  # alt: Twitter Logo
+
+
+# Page-, post-, or document-specific author information (see Advanced usage)
+# author: benbalter
+
+# Page-, post-, or document-specific locale information. Takes priority over existing front matter attribute lang.
+# locale: en_US
+
+# Note: Front matter defaults can be used for any of the above values as described in advanced usage with an image example.
+
+# Customizing JSON-LD output
+# The following options can be set for any particular page. While the default
+# options are meant to serve most users in the most common circumstances, there
+# may be situations where more precise control is necessary.
+# seo:
+  # If the name of the thing that the page represents is different from the
+  # page title. (i.e.: "Frank's Café" vs "Welcome to Frank's Café")
+  # name: Frank's Café
+
+  # The type of things that the page represents. This must be a [Schema.org
+  # type](https://schema.org/docs/schemas.html), and will probably usually be something like [BlogPosting](https://schema.org/BlogPosting),
+  # [NewsArticle](https://schema.org/NewsArticle), [Person](https://schema.org/Person), [Organization](https://schema.org/Organization), etc.
+  # type: NewsArticle
+
+  # An array of other URLs that represent the same thing that this page
+  # represents. For instance, Jane's bio page might include links to Jane's
+  # GitHub and Twitter profiles.
+  # links:
+  #   - https://twitter.com/BenBalter
+  #   - https://www.facebook.com/ben.balter
+  #   - https://www.linkedin.com/in/BenBalter
+  #   - https://github.com/benbalter
+  #   - https://keybase.io/benbalter
+
+  # Manually specify the dateModified field in the JSON-LD output to override
+  # Jekyll's own dateModified. This field will take first priority for the
+  # dateModified JSON-LD output. This is useful when the file timestamp does
+  # not match the true time that the content was modified. A user may also
+  # install [Last Modified At](https://github.com/gjtorikian/jekyll-last-modified-at) which will offer an alternative way of providing
+  # for the dateModified field.
+  # date_modified:
+
+# Custom Canonical URL for a page (defaults to page url
+# "https://example.com/title-of-your-post")
+# canonical_url: 'https://github.com/jekyll/jekyll-seo-tag/'
+# NOTE: This will generate the following HTML:
+# `<link rel="canonical" href="https://github.com/jekyll/jekyll-seo-tag/" />`
+
+# Jekyll SEO Tag Plugin
+#----------------------
