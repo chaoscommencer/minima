@@ -1,6 +1,21 @@
+# The title/name of the site
+# NOTE: Used by the Jekyll Feed plugin (cannot be moved without modification to
+# jekyll-feed)
 title: Your awesome title
-author: GitHub User
+
+# Global author information.
+# NOTE: Used by the Jekyll Feed plugin (cannot be moved without modification to
+# jekyll-feed--except for to `_data/authors.yml` file)
+author:
+  name: GitHub User
+  twitter: jekyllrb
+  # picture: /img/benbalter.png
+
 email: your-email@domain.com
+
+# A longer description for the site
+# NOTE: Used by the Jekyll Feed plugin (cannot be moved without modification to
+# jekyll-feed)
 description: > # this means to ignore newlines until "twitter_username:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -100,3 +115,158 @@ include: []
 
 # Content Filtering
 #------------------
+
+
+#-------------------
+# Jekyll Feed Plugin
+
+# https://github.com/jekyll/jekyll-feed
+# The Jekyll Feed plugin automatically generates an Atom feed at
+# `_site/feed.xml`.
+
+# The title/name of the site, e.g., "My awesome site"
+# title: Your awesome title
+
+# A longer description of what your site is about, e.g., "Where I blog about
+# Jekyll and other awesome things"
+# description: > # this means to ignore newlines until "url:"
+#   Write an awesome description for your new site here. You can edit this
+#   line in _data/about.yml. It will appear in your document head meta
+#   (for Google search results) and in your feed.xml site description.
+
+# The URL to your site, e.g., https://example.com. If none is provided, the
+# plugin will try to use site.github.url.
+# url: https://example.com
+
+# Global author information.
+# author: Author Name
+# NOTE: To account for multiple authors, instead complete author information in
+# `_data/authors.yml`
+# benbalter:
+#   picture: /img/benbalter.png
+#   twitter: jekyllrb
+# potus:
+#   picture: /img/potus.png
+#   twitter: whitehouse
+
+# Meta tags
+# The plugin exposes a helper tag to expose the appropriate meta tags to
+# support automated discovery of your feed. Simply place `{% feed_meta %}`
+# someplace in your template's <head> section, to output the necessary metadata.
+
+# Feed Customization
+# feed:
+  # Icon with 1:1 proportions for readers to use for the blog feed (not
+  # supported by all readers; often overridden by a favicon or site icon)
+  # icon: /images/icon.png
+
+  # Logo with 2:1 proportions for readers to use for the blog feed (not
+  # supported by all readers).
+  # logo: /images/logo.png
+
+  # A non-default feed path
+  # WARNING: You shouldn't have to do this unless you already have a feed
+  # you're using, and you can't or wish not to redirect existing subscribers
+  # path: /blog/feed.atom
+
+  # Jekyll Feed can generate feeds for each category. Simply define desired
+  # categories as follows:
+  # categories:
+  #   - news
+  #   - updates
+
+  # A limit for the number of posts displayed in the feed (default 10)
+  # posts_limit: 20
+
+  # Supporting Feeds for Custom Collections
+  # Generate feeds for [chronological (e.g., collections with dates in the
+  # filenames)] collections other than the Posts collection
+  # collections:
+  #   - changes
+
+  # NOTE: To specify a custom output path or select categories for the
+  # associated custom collection, instead define collections as follows:
+  # collections:
+  #   changes:
+  #     # Custom [optional] feed output path
+  #     path: "/changes.atom"
+  #     # Collections can also have [optional] category feeds that are
+  #     # generated at `/feed/<COLLECTION>/<CATEGORY>.xml`
+  #     categories:
+  #       - news
+  #       - updates
+
+  # [Optional] flag supporting exclusion of post content from the Atom feed
+  # (default false--for backward compatibility).  Disables the <content> tag
+  # for all posts.
+  # NOTE: May be overridden (on a per-post basis) in corresponding post front
+  # matter.
+  # excerpt_only: true
+
+  # To automatically generate feeds for each tag you apply to your posts:
+  # tags: true
+  # NOTE: Alternatively, generate feeds for specific tags or ignoring specific
+  # tags as follows:
+  # tags:
+    # To disable auto-generation on a per-tag basis, exclude posts tagged:
+    # except:
+    #   - tag-to-exclude
+    #   - another-tag
+    # NOTE: Including a tag that is excluded will result in a feed not being
+    # generated for the corresponding post(s).
+
+    # To generate feeds for only specified tags:
+    # only:
+    #   - tag-to-include
+    #   - another-tag
+
+    # To change the location of these auto-generated feeds
+    # (`/feed/by_tag/<TAG>.xml` by default), provide an alternative folder
+    # as follows:
+    # path: "alternative/path/for/tags/feeds/"
+
+  # Disable feed generation when `jekyll.environment == "development"`, but
+  # don't want to remove the plugin (so you don't accidentally commit the
+  # removal). Default value is false.
+  # disable_in_development: true
+
+
+# Custom Feed Styling
+# When an XSLT Styleheet file named feed.xslt.xml exists at the root of the
+# repository, a link to this stylesheet is added to the generated feed.
+
+
+# Optional parameters (to be defined in the corresponding post front matter)
+# The plugin will use the following post metadata, automatically generated by
+# Jekyll, which you can override via a post's YAML front matter:
+
+# date
+# title
+# excerpt
+# id
+# category
+# tags
+
+# Additionally, the plugin will use the following values, if present in a
+# post's YAML front matter:
+
+# URL of an image that is representative of the post (can also be passed as
+# image.path)
+# image
+
+# The author of the post, e.g., "Dr. Jekyll". If none is given, feed readers
+# will look to the feed author as defined in _config.yml. Like the feed author,
+# this can also be an object or a reference to an author in _data/authors.yml.
+# author
+
+# A short description of the post.
+# description
+
+# A post-specific override for the same site-wide configuration setting
+# controlling the exclusion of post content from the Atom feed.  Disables the
+# <content> tag for corresponding post.
+# feed:
+#   excerpt_only: true
+
+# Jekyll Feed Plugin
+#-------------------
