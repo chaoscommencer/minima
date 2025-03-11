@@ -12,46 +12,46 @@
 # jekyll-feed--except for to `_data/authors.yml` file)
 # NOTE: Used by the Jekyll SEO Tag plugin (cannot be moved without modification
 # to jekyll-seo-tag--except for to `_data/authors.yml` file)
-author_1:
-    name: GitHub User
-    email: your-email@domain.com
-    twitter: jekyllrb
-    # picture: /img/benbalter.png
+# author_1:
+#     name: GitHub User
+#     email: your-email@domain.com
+#     twitter: jekyllrb
+#     # picture: /img/benbalter.png
 
-    # Starting from August 6, 2021 [Google recommends](https://developers.google.com/search/updates) to set the author.url
-    # property. This property helps Google to disambiguate the correct author
-    # of the article.
-    # url:
+#     # Starting from August 6, 2021 [Google recommends](https://developers.google.com/search/updates) to set the author.url
+#     # property. This property helps Google to disambiguate the correct author
+#     # of the article.
+#     # url:
 
-    # social links
-    social:
-        # - type: dribbble
-        #   username: jekyll
-        # - type: facebook
-        #   username: jekyll
-        # - type: flickr
-        #   username: jekyll
-        - type: github
-          username:  jekyll
-        # - type: instagram
-        #   username: jekyll
-        # - type: linkedin
-        #   username: jekyll
-        # - type:  pinterest
-        #   username: jekyll
-        # Mastodon instances
-        # - type: mastodon
-        #   username: jekyll
-        #   instance: example.com
-        # - type: mastodon
-        #   username: jekyll2
-        #   instance: example.com
-        - type: twitter
-          username: jekyllrb
-        # - type: youtube
-        #   username: jekyll
-        # - type: googleplus
-        #   username: +jekyll
-        # - type: rss
-        #   display_name: rss
-        #   feed: /feed.xml
+#     # social links
+#     social:
+#         # - type: dribbble
+#         #   username: jekyll
+#         # - type: facebook
+#         #   username: jekyll
+#         # - type: flickr
+#         #   username: jekyll
+#         - type: github
+#           username:  jekyll
+#         # - type: instagram
+#         #   username: jekyll
+#         # - type: linkedin
+#         #   username: jekyll
+#         # - type:  pinterest
+#         #   username: jekyll
+#         # Mastodon instances
+#         # - type: mastodon
+#         #   username: jekyll
+#         #   instance: example.com
+#         # - type: mastodon
+#         #   username: jekyll2
+#         #   instance: example.com
+#         - type: twitter
+#           username: jekyllrb
+#         # - type: youtube
+#         #   username: jekyll
+#         # - type: googleplus
+#         #   username: +jekyll
+#         # - type: rss
+#         #   display_name: rss
+#         #   feed: /feed.xml
